@@ -1,19 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import { Layout, Space , Typography,flex} from 'antd';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
-const mainStyle:React.CSSProperties = {
-  display:'flex',
-  minHeight:'100vh',
-  width:'100%',
-  justifyContent:'center',
-  alignItems:'center',
-  backgroundColor:'#023047'
-}
+
 
 export default function Home() {
   return (
@@ -24,10 +16,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={mainStyle}>
-
-        <Typography.Title style={{color:'#ffb703'}}>Hello Customers</Typography.Title>
-       
+      <main className='flex min-h-screen bg-[#023047] justify-center items-center'>
+        <h1 className='text-[#ffb703] text-4xl animate-bounce font-bold tracking-widest'>Hello World</h1>
       </main>
     </>
   )
