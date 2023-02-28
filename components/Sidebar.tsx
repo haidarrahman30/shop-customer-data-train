@@ -4,25 +4,16 @@ import IconImage from "../images/logo.png";
 import ArrowImage from "../images/control.png";
 import DashboardImage from "../images/Chart_fill.png";
 import InboxImage from "../images/Chat.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
-// import ArrowImage from "../images/control.png";
 
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
+  
   const Menus = [
     { title: "Dashboard", src: DashboardImage },
-    { title: "Inbox", src: InboxImage },
-    { title: "Accounts", src: DashboardImage , gap: true },
-    { title: "Schedule ", src: InboxImage},
+    { title: "Menu1", src: InboxImage },
+    { title: "Menu2", src: DashboardImage , gap: true },
+    { title: "Menu3 ", src: InboxImage},
 
   ];
 
@@ -57,7 +48,7 @@ const Sidebar = () => {
               !open && "scale-0"
             }`}
           >
-            Designer
+            LogoApp
           </h1>
         </div>
         <ul className="pt-6">
