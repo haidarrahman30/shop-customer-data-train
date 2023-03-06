@@ -14,7 +14,7 @@ const CardTotal: React.FC<CardTotalProps> = ({
   icon: Icon = FaCoins,
 }) => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/4 items-center justify-center">
+    <div className="w-full lg:w-1/4 items-center justify-center">
       <div className="relative flex flex-col min-w-0 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
         <div className="flex-auto p-4">
           <div className="flex flex-row -mx-3">
